@@ -21,6 +21,8 @@ var insertPosts = function() {
   rl.prompt();
 
   rl.on('line', function(pass) {
+    var i = 0;
+
     var connection = mysql.createConnection({
       host: 'localhost',
       database: 'wordpress',
@@ -47,6 +49,14 @@ var insertPosts = function() {
         }
 
         console.log(res);
+
+        i++;
+
+        if(i === posts.length) {
+          connection.end();
+
+          process.exit(0);
+        }
       });
     });
   }).on('close', function() {
