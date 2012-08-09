@@ -8,7 +8,6 @@ var mysql = require('mysql');
 var readline = require('readline');
 
 var USER;
-var PASSWORD;
 var posts = [];
 
 var insertPosts = function() {
@@ -17,7 +16,7 @@ var insertPosts = function() {
     output: process.stdout
   });
 
-  rl.setPrompt('MySQL password?> ');
+  rl.setPrompt('\nMySQL password?> ');
   rl.prompt();
 
   rl.on('line', function(pass) {
