@@ -1,0 +1,9 @@
+Install
+-------
+
+Run: `make`
+
+Usage
+-----
+
+`node ./md2wp.js <path to _posts dir> <mysql username>`
