@@ -34,6 +34,7 @@ var insertPosts = function() {
     posts.forEach(function(post) {
       var row = {
         post_type: 'post',
+        post_status: 'draft',
         post_author: 0,
         post_title: post.title,
         post_name: post.slug,
