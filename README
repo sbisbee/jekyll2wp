@@ -6,4 +6,4 @@ Run: `make`
 Usage
 -----
 
-Run: `node ./md2wp.js <path to _posts dir> <mysql username>`
+Run: `node ./jekyll2wp.js <path to _posts dir> <mysql username>`
